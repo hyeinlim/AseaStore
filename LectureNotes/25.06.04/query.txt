@@ -1,0 +1,8 @@
+SELECT 
+  *,
+  CAST(EXTRACT(DAYOFWEEK FROM created_at) AS INT64) AS 계산_요일,
+  LPAD(CAST(EXTRACT(HOUR FROM created_at) AS STRING), 2, '0') AS 계산_시간
+FROM 
+  `bigquery-public-data.thelook_ecommerce.order_items`
+WHERE 
+  created_at >= '2018-01-01'
