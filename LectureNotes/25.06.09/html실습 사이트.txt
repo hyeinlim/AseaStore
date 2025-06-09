@@ -1,1 +1,23 @@
 https://realtimehtml.com/
+
+
+
+
+<html>
+ <head>
+   
+  <style>
+  a { color: black; }
+  </style>
+   
+ </head>
+  
+<body>
+
+    <div id="message"></div>
+
+
+     <a href="google.com" target="blank">수업용 링크</a>
+
+</body>
+<html>
